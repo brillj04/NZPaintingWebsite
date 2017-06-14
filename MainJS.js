@@ -25,28 +25,7 @@ function myFunction(xml) {
 
 
 
-$(document).ready(function(){
-	$.ajax({
-	
-        type: "GET",
-	url: "ProductsPaintings.xml",
-	dataType: "xml",
-        success: xmlParser
-	
-        }); 
-   });
 
-function xmlParser(xml) {
-	$(xml).find("PAINTING").each(function(){
-	     $('#productDisplay').append('<div class="PAINTING"><img src="Images/' + 
-	       $(this).find("IMAGE").text() + '" width="200" height="225" alt="' +
-		 $(this).find("TITLE").text() + '"/><br/><div class="TITLE">' + 
-		  $(this).find("TITLE").text() + '<br/>$' +
-		    $(this).find("CATEGORY").text() + '</div></div>');
-		     $(".PAINTING").fadeIn(1000);
-	});
-	
-}
 
 /*=============Membership form validation==============================*/
 function submitForm() {
