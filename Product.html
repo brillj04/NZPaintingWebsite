@@ -4,13 +4,38 @@
 <meta charset="UTF-8">
 <title>NZ Painting - Products</title>
 <link rel="stylesheet" href="MainCSS.css">
-<script src="MainJS.js"></script>
+<script type="text/javascript" src="MainJS.js"></script>
+<script type="text/javascript">
+	 $(document).ready(function(){
+	$.ajax({
+	
+        type: "GET",
+	url: "ProductsPaintings.xml",
+	dataType: "xml",
+        success: xmlParser
+	
+        }); 
+   });
+
+function xmlParser(xml) {
+	$('#load').fadeOut();
+	         $(xml).find("PAINTING").each(function(){
+	         $('#container').append('<div class="painting"><img src="Images/' + 
+	         $(this).find("IMAGE").text() + '" width="200" height="225" alt="' +
+		     $(this).find("TITLE").text() + '"/><br/><div class="title">' + 
+		     $(this).find("TITLE").text() + '<br/>' +
+		     $(this).find("CATEGORY").text() + '</div></div>');
+		     $(".painting").fadeIn(1000);
+	});
+	
+}
+</script>
 
 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
 </head>
 
 <body>
-<div id="container">
+<div id="container1">
 
 <header>
  <h1>New Zealand Painting</h1> 
@@ -24,34 +49,11 @@
   <li><a href="index.html">Home</a></li>
 </ul>
 </nav>
+<div id="container">
+<div align="center" id="productDisplay"><img src="Images/Header.GIF" id="load" width="400" height="400" align="absmiddle"/></div>
+</div>
 
-<section id="productDisplay">
-<p>Dfbdhf</p>
-<script>
-	 $(document).ready(function(){
-	$.ajax({
-	
-        type: "GET",
-	url: "ProductsPaintings.xml",
-	dataType: "xml",
-        success: xmlParser
-	
-        }); 
-   });
 
-function xmlParser(xml) {
-	$(xml).find("PAINTING").each(function(){
-	     $('#productDisplay').append('<div class="PAINTING"><img src="Images/' + 
-	       $(this).find("IMAGE").text() + '" width="200" height="225" alt="' +
-		 $(this).find("TITLE").text() + '"/><br/><div class="TITLE">' + 
-		  $(this).find("TITLE").text() + '<br/>' +
-		    $(this).find("CATEGORY").text() + '</div></div>');
-		     $(".PAINTING").fadeIn(1000);
-	});
-	
-}
-	</script>
-</section>
 
 <footer>
 <hr>
