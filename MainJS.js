@@ -17,7 +17,7 @@ function myFunction(xml) {
     table += "<tr><td>" +
     x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
     "</td><td>" +
-    x[i].getElementsByTagName("CATEGORY")[0].childNodes[0].nodeValue +
+    x[i].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue +
     "</td></tr>";
   }
   document.getElementById("demo").innerHTML = table;
