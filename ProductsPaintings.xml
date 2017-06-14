@@ -1,0 +1,12 @@
+<?xml version="1.0"? encoding="UTF-8" standalone="yes"?>
+<PRODUCTS>
+	<PAINTING>
+		<ID>1</ID>
+		<TITLE>Blue Fireworks</TITLE>
+		<CATEGORY>Abstract</CATEGORY>
+		<DESCRIPTION>Abstract painting of fireworks</DESCRIPTION>
+		<POPULARITY>High</POPULARITY>
+		<ONSALE>No</ONSALE>
+		<IMAGE>Product3.jpg</IMAGE>
+	</PAINTING>
+</PRODUCTS>

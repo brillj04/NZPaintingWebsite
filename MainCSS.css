@@ -1,0 +1,146 @@
+/* External CSS File to NZ Painting's Website */
+body{
+	background-color: #ccccff;	
+	font-family: 'Philosopher', sans-serif;
+	color: black;
+	
+}
+footer{
+	width: 100%;
+	text-align: center;
+	color: #000033;
+}
+
+#container{
+	margin: 0 auto;
+	width: 1300px;
+	
+}
+header{
+	background-image: url("Images/Header.gif");
+	height: 200px;
+	border-radius: 8px 8px 0px 0px;
+	text-align: center;
+}
+
+header h1{
+	text-align: center;
+	padding-top: 75px;
+	font-size: 65px;
+	 background: -webkit-linear-gradient(#ffccff,#000066);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #000033;
+	border-radius: 0px 0px 8px 8px;
+	
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+	margin-right: 25px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:#000066;
+	border-radius: 8px;
+	
+}
+
+input[type=text], input[type=email], input[type=date],  select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #101669;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3366ff;
+	color: black;
+}
+#homeDisplay{
+	border-radius: 5px;
+	background: #f2f2f2; /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(circle, red, yellow, green); /* Safari */
+	background: -o-radial-gradient(circle, red, yellow, green); /* Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(circle, red, yellow, green); /* Firefox 3.6 to 15 */
+	background: radial-gradient(circle, #ffccb3, #99bbff); /* Standard syntax */
+    padding: 20px;
+	margin-top: 15px;
+	color: black;
+	font-family: 'Alegreya', serif;
+	font-size: 16px;
+}
+#formDisplay {
+    border-radius: 5px;
+	background: #f2f2f2; /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(circle, red, yellow, green); /* Safari */
+	background: -o-radial-gradient(circle, red, yellow, green); /* Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(circle, red, yellow, green); /* Firefox 3.6 to 15 */
+	background: radial-gradient(circle, #ffccb3, #99bbff); /* Standard syntax */
+    padding: 20px;
+	margin-top: 15px;
+	color: black;
+	font-family: 'Alegreya', serif;
+	font-size: 16px;
+}
+
+#aboutDisplay{
+	border-radius: 5px;
+	background: #f2f2f2; /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(circle, red, yellow, green); /* Safari */
+	background: -o-radial-gradient(circle, red, yellow, green); /* Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(circle, red, yellow, green); /* Firefox 3.6 to 15 */
+	background: radial-gradient(circle, #ffccb3, #99bbff); /* Standard syntax */
+	margin-top: 15px;
+	color: black;	
+	height: 540px;
+	font-family: 'Alegreya', serif;
+	font-size: 16px;
+}
+
+#txt{
+	float: left;
+	text-align: left;
+	margin: 25px 15px 25px 5px;
+	width: 45%;
+	text-align: justify;
+	
+}
+
+#map{
+	height: 500px;
+	width: 50%;
+	color: black;
+	margin: 20px 15px 20px 15px;
+	float: left;
+}

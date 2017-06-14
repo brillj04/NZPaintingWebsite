@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NZ Painting - About</title>
+<link rel="stylesheet" href="MainCSS.css">
+<script type="text/javascript" src="MainJS.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+
+
+</head>
+
+<body>
+<div id="container">
+
+<header>
+ <h1>New Zealand Painting</h1> 
+</header>
+
+<nav>
+<ul>
+  <li><a href="About.html">About Us</a></li>
+  <li><a href="Membership.html">Membership Sign up</a></li>
+  <li><a href="Product.html">Our Products</a></li>
+  <li><a href="Index.html">Home</a></li>
+</ul>
+</nav>
+
+<section id="aboutDisplay">
+	
+	<aside id="map"></aside>
+	
+	<aside id="txt">
+	<p>NZ Painting was established in 1904 with the dream in mind of being able to supple high
+	quality artworks at an addorable price.Currently we have our online store located here in NZ but it 
+	has been our dream to make our artwork available to everyone around the world. NZ Painting now has the 
+	advantage of being able to provide art in a wide variety at an affordable price.</p>
+	
+	<p><b><i>Our Store Address</i></b><br><br>97 Clifton Road<br> Herne Bay<br>Auckland</p>
+	
+	<p><b><i>Email Us: </i></b><a href="mailto:NZPainting@paintings.co.nz">NZPainting@paintings.co.nz</a></p>
+	<p><b><i>Call Us: </i></b>09 8468725</p>
+	
+	</aside>
+	
+</section>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(-36.844282, 174.730564);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 15};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  var infowindow = new google.maps.InfoWindow({
+    content: "New Zealand Painting <br><br>97 Clifton Road <br>Herne Bay<br>Auckland<br>"
+  });
+  infowindow.open(map,marker);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt8Sh-20h7rmRpJiFx2xToMavYAkYK7b8&callback=myMap"></script>
+
+
+<footer>
+<hr>
+&copy Bekfasts 2017
+</footer>
+</div>
+</body>
+
+</html>

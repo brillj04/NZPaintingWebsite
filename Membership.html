@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NZ Painting - Membership</title>
+<link rel="stylesheet" href="MainCSS.css">
+<script type="text/javascript" src="MainJS.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+</head>
+
+<body>
+<div id="container">
+
+<header>
+ <h1>New Zealand Painting</h1> 
+</header>
+
+<nav>
+<ul>
+  <li><a href="About.html">About Us</a></li>
+  <li><a href="Membership.html">Membership Sign up</a></li>
+  <li><a href="Product.html">Our Products</a></li>
+  <li><a href="Index.html">Home</a></li>
+</ul>
+</nav>
+
+<section id="formDisplay">
+<form class="myForm" name="myForm" onsubmit="submitForm()">
+    <label>First Name</label>
+    <input type="text" id="fname" name="fname" placeholder="Your name.." required>
+
+    <label>Last Name</label>
+    <input type="text" id="lname" name="lname" placeholder="Your last name.." required>
+	
+	<label>Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Your emaill address.." required>
+	
+	<label>Date</label>
+    <input type="date" id="DOB" name="DOB" required><br><br>
+	
+	<label>Gender:</label>
+    <input type="radio" id="gender" name="gender" value="male" checked> Male
+	<input type="radio" id="gender" name="gender" value="female"> Female<br><br>
+	
+	<input type="checkbox" name="agree" value="agree" required>
+	<label>I agree with the terms of service</label><br><br>
+	
+	 <input type="submit" value="Submit">
+</form>
+</section>
+
+
+
+<footer>
+<hr>
+&copy Bekfasts 2017
+</footer>
+</div>
+</body>
+
+</html>
