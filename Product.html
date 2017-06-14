@@ -6,6 +6,30 @@
 <link rel="stylesheet" href="MainCSS.css">
 <script src="MainJS.js">
 </script>
+<script type="text/javascript">
+ $(document).ready(function(){
+	$.ajax({
+	
+        type: "GET",
+	url: "ProductsPaintings.xml",
+	dataType: "xml",
+        success: xmlParser
+	
+        }); 
+   });
+
+function xmlParser(xml) {
+	$(xml).find("PAINTING").each(function(){
+	     $('#productDisplay').append('<div class="PAINTING"><img src="Images/' + 
+	       $(this).find("IMAGE").text() + '" width="200" height="225" alt="' +
+		 $(this).find("TITLE").text() + '"/><br/><div class="TITLE">' + 
+		  $(this).find("TITLE").text() + '<br/>' +
+		    $(this).find("CATEGORY").text() + '</div></div>');
+		     $(".PAINTING").fadeIn(1000);
+	});
+	
+}
+ </script>
 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
 </head>
 
@@ -26,30 +50,7 @@
 </nav>
 
 <section id="productDisplay">
-<script>
- $(document).ready(function(){
-	$.ajax({
-	
-        type: "GET",
-	url: "ProductsPaintings.xml",
-	dataType: "xml",
-        success: xmlParser
-	
-        }); 
-   });
 
-function xmlParser(xml) {
-	$(xml).find("PAINTING").each(function(){
-	     $('#productDisplay').append('<div class="PAINTING"><img src="Images/' + 
-	       $(this).find("IMAGE").text() + '" width="200" height="225" alt="' +
-		 $(this).find("TITLE").text() + '"/><br/><div class="TITLE">' + 
-		  $(this).find("TITLE").text() + '<br/>$' +
-		    $(this).find("CATEGORY").text() + '</div></div>');
-		     $(".PAINTING").fadeIn(1000);
-	});
-	
-}
- </script>
 </section>
 
 <footer>
