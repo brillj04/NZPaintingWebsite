@@ -20,7 +20,7 @@
 function xmlParser(xml) {
 	$('#load').fadeOut();
 	         $(xml).find("PAINTING").each(function(){
-	         $('#container').append('<div class="painting"><img src="Images/Products/' + $(this).find("IMAGE").text() +'" width="200" height="225" alt="' +
+	         $("#container").append('<div class="painting"><img src="Images/Products/' + $(this).find("IMAGE").text() +'" width="200" height="225" alt="' +
 		     $(this).find("TITLE").text() + '"/><br/><div class="title">' + 
 		     $(this).find("TITLE").text() + '<br/>' +
 		     $(this).find("CATEGORY").text() + '</div></div>');
