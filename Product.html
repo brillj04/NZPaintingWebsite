@@ -4,30 +4,7 @@
 <meta charset="UTF-8">
 <title>NZ Painting - Products</title>
 <link rel="stylesheet" href="MainCSS.css">
-<script src="MainJS.js">
-	 $(document).ready(function(){
-	$.ajax({
-	
-        type: "GET",
-	url: "ProductsPaintings.xml",
-	dataType: "xml",
-        success: xmlParser
-	
-        }); 
-   });
-
-function xmlParser(xml) {
-	$(xml).find("PAINTING").each(function(){
-	     $('#productDisplay').append('<div class="PAINTING"><img src="Images/' + 
-	       $(this).find("IMAGE").text() + '" width="200" height="225" alt="' +
-		 $(this).find("TITLE").text() + '"/><br/><div class="TITLE">' + 
-		  $(this).find("TITLE").text() + '<br/>' +
-		    $(this).find("CATEGORY").text() + '</div></div>');
-		     $(".PAINTING").fadeIn(1000);
-	});
-	
-}
-</script>
+<script src="MainJS.js"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
 </head>
@@ -50,6 +27,30 @@ function xmlParser(xml) {
 
 <section id="productDisplay">
 <p>Dfbdhf</p>
+<script>
+	 $(document).ready(function(){
+	$.ajax({
+	
+        type: "GET",
+	url: "ProductsPaintings.xml",
+	dataType: "xml",
+        success: xmlParser
+	
+        }); 
+   });
+
+function xmlParser(xml) {
+	$(xml).find("PAINTING").each(function(){
+	     $('#productDisplay').append('<div class="PAINTING"><img src="Images/' + 
+	       $(this).find("IMAGE").text() + '" width="200" height="225" alt="' +
+		 $(this).find("TITLE").text() + '"/><br/><div class="TITLE">' + 
+		  $(this).find("TITLE").text() + '<br/>' +
+		    $(this).find("CATEGORY").text() + '</div></div>');
+		     $(".PAINTING").fadeIn(1000);
+	});
+	
+}
+	</script>
 </section>
 
 <footer>
