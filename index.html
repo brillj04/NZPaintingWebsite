@@ -57,7 +57,8 @@ data.products.forEach( function(obj) {
 });
      
   $.getJSON("ProductsPaintings.json", function(json) {
-      document.getElementById("img-info").appendChild(json);; // this will show the info it in firebug console
+      console.log(json); 
+      document.getElementById("img-info").appendChild(json); // this will show the info it in firebug console
 });
  
  
