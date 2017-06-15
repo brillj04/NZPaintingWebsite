@@ -7,7 +7,7 @@
 "Description":"Abstract painting of fireworks",
 "Popularity":"High",
  "Onsale":"No" , 
- "imgPath":"Product1.jpg",
+ "imgPath":"Images/Products/Product1.jpg",
  "price":"100"},
 
 {"ID":"2",
@@ -16,8 +16,26 @@
 "Description":"Beautiful pot of flowers",
 "Popularity":"Normal",
  "Onsale":"Yes" , 
- "imgPath":"Product2.jpg",
-  "price":"90"}
+ "imgPath":"Images/Products/Product2.jpg",
+  "price":"90"},
+ 
+ {"ID":"3",
+"Title":"Merry Winter Wonderland",
+"Category":"Christmas",
+"Description":"A winter wonderland",
+"Popularity":"Normal",
+ "Onsale":"Yes" , 
+ "imgPath":"Images/Products/Product3.jpg",
+  "price":"230"},
+ 
+  {"ID":"4",
+"Title":"Lake View",
+"Category":"Landscape",
+"Description":"Lake view of Themistokles",
+"Popularity":"High",
+ "Onsale":"Yes" , 
+ "imgPath":"Images/Products/Product4.jpg",
+  "price":"230"}
 
 
 ]}
