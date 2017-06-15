@@ -5,7 +5,31 @@
 <title>NZ Painting - Home</title>
 <link rel="stylesheet" href="MainCSS.css">
 <script src="MainJS.js"></script>
- <script src="jquery-3.2.1.min.js"></script>   
+<script src="jquery-3.2.1.min.js">
+$(document).ready(function(){
+
+        $.getJSON("ProductsPaintings.json", function(result){
+         var mhtml = '';
+            $.each(result.products, function(i, field){
+             if (field.Popularity == "High"){
+              
+                mhtml += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
+                mhtml += '<h1 class="title">'+field.Title+'</h1>';
+                mhtml += '<h3 class="category">'+field.Category+'</h3>';
+                mhtml += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field.price+'</p>';
+                mhtml += '<p class="desc" style="font-size:20px;">'+field.Description+'</p>';
+                mhtml += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field.Popularity+'</span>';
+                mhtml += '<br>';
+                mhtml += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field.Onsale+'</span>';
+                mhtml += '</li>';
+              return false;
+             }
+            });
+        var $ul = $('<ul id="prodList">').append($(mhtml));// append DOM only one time.
+        $('#popularProducts').append($ul);
+        });
+});  
+   </script>   
 <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
  
@@ -37,31 +61,7 @@
     
 
  <section id="popularProducts">
- <script>
-$(document).ready(function(){
 
-        $.getJSON("ProductsPaintings.json", function(result){
-         var mhtml = '';
-            $.each(result.products, function(i, field){
-             if (field.Popularity == "High"){
-              
-                mhtml += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
-                mhtml += '<h1 class="title">'+field.Title+'</h1>';
-                mhtml += '<h3 class="category">'+field.Category+'</h3>';
-                mhtml += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field.price+'</p>';
-                mhtml += '<p class="desc" style="font-size:20px;">'+field.Description+'</p>';
-                mhtml += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field.Popularity+'</span>';
-                mhtml += '<br>';
-                mhtml += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field.Onsale+'</span>';
-                mhtml += '</li>';
-              return false;
-             }
-            });
-        var $ul = $('<ul id="prodList">').append($(mhtml));// append DOM only one time.
-        $('#popularProducts').append($ul);
-        });
-});  
-   </script>
 </section>
 
 
