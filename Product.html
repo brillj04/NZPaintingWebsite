@@ -15,7 +15,7 @@ $(document).ready(function(){
            
              if (field1.Popularity == "High"){
                      
-                  popularProd  += '<li><div class="bannerImg"><img class="mySlides" img src="'+field1.imgPath+'" style="width:100px;height:100px;"/></div>';
+                  popularProd  += '<li><div class="bannerImg"><img class="mySlides" src="'+field1.imgPath+'" style="width:100px;height:100px;"/></div>';
                   popularProd  += '<h1 class="title">'+field1.Title+'</h1>';
                   popularProd  += '<h3 class="category">'+field1.Category+'</h3>';
                   popularProd  += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field1.price+'</p>';
@@ -28,22 +28,6 @@ $(document).ready(function(){
              
              }
            });
-            $.each(result.products, function(i, field2){
-             if (field2.Onsale == "Yes"){
-                  onsaleProd   += '<li><div class="bannerImg"><img src="'+field2.imgPath+'" style="width:100px;height:100px;"/></div>';
-                  onsaleProd   += '<h1 class="title">'+field2.Title+'</h1>';
-                  onsaleProd   += '<h3 class="category">'+field2.Category+'</h3>';
-                  onsaleProd   += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field2.price+'</p>';
-                  onsaleProd   += '<p class="desc" style="font-size:20px;">'+field2.Description+'</p>';
-                  onsaleProd   += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field2.Popularity+'</span>';
-                  onsaleProd   += '<br>';
-                  onsaleProd   += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field2.Onsale+'</span>';
-                  onsaleProd   += '</li>';
-                      return i < 20;//stop loop after 5th item
-         
-           }
-                    
-            });
         var $ul1 = $('<ul id="popularprodList">').append($(popularProd));// append DOM only one time.
         $('#popularProducts').append($ul1);
         var $ul2 = $('<ul id="onsaleprodList">').append($(onsaleProd));// append DOM only one time.
