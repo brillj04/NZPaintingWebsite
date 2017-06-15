@@ -4,30 +4,26 @@
 <meta charset="UTF-8">
 <title>NZ Painting - Home</title>
 <link rel="stylesheet" href="MainCSS.css">
-<script src="MainJS.js">
-   var data = '[{"ID":"1",
-"Title":"Blue Fireworks",
-"Category":"Abstract",
-"Description":"Abstract painting of fireworks",
-"Popularity":"High",
- "Onsale":"No" , 
- "ImageURL":"Product1.jpg"},
+<script src="MainJS.js"></script>
+   <script>
+      
+    $(function() {
+ 
+ 
+   var people = [];
+ 
+   $.getJSON('ProductsPaintings.json', function(data) {
+       $.each(data.products, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.Title + "</td>" +
+           "<td>" + f.Category + "</td>" + "<td>" + f.Description + "</td>" + "<td>" + f.Popularity + "</td>" + "<td>" 
+          + f.Onsale + "</td>" + "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+     });
+ 
+   });
+ 
+});
 
-{"ID":"2",
-"Title":"Flowers",
-"Category":"Still Life",
-"Descriptionhttps://stackoverflow.com/users/840208/krishna-bhargavi":"Beautiful pot of flowers",
-"Popularity":"Normal",
- "Onsale":"Yes" , 
- "ImageURL":"Product2.jpg"}
-]';
-var obj = JSON.parse(data);
-var images = '';
-for( var i=0, max<obj.length; ++i ) {
-  images += '<img src="' + obj[i]['ImageURL'] + '" />';
-}
-
-document.getElementById( 'popularProducts' ).innerHTML = images;
    </script>
 <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
@@ -52,9 +48,19 @@ document.getElementById( 'popularProducts' ).innerHTML = images;
 
 <section id="homeDisplay">
    <h3> Introduction </h3>
-</section>
-<div class="banner-section" id="img-container">
-    </div>
+   
+      <table id= "userdata" border="2">
+  <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>City</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
  <section id="popularProducts">
 
 </section>
