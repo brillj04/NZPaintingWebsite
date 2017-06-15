@@ -1,13 +1,4 @@
-function loadXMLDoc() {
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      myFunction(this);
-    }
-  };
-  xmlhttp.open("GET", "ProductsPaintings.xml", true);
-  xmlhttp.send();
-}
+
 function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
@@ -26,10 +17,11 @@ function myFunction(xml) {
 
 /*===============JSON=======================*/
 //Retrieving data:
+function loadXMLdoc(){
 text = localStorage.getItem("ProductsPaintings.json");
 obj = JSON.parse(text);
 document.getElementById("demo").innerHTML = obj.name;
-
+}
 
 /*=============Membership form validation==============================*/
 function submitForm() {
