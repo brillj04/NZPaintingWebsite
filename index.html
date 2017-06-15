@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="MainCSS.css">
 <script src="MainJS.js"></script>
      <script>
-  $(document).ready(function () {
+/*  $(document).ready(function () {
   var jsonURL = "ProductsPaintings.json";
   $.getJSON(jsonURL, function (json)
   {
@@ -16,9 +16,14 @@
     });
    $('popularProducts').append(imgList);
   });
-});
-
-
+});*/
+          var text = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+var obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
    </script>
 <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
@@ -58,6 +63,7 @@
    </table>
 
  <div id="popularProducts">
+<p id="demo"></p>
 
 </div>
 
