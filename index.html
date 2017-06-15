@@ -93,6 +93,8 @@ $(document).ready(function(){
                 mhtml += '<span> class="onsale">'+val.Onsale+'</span>';
                 mhtml += '</li>';
             });
+          var $ul = $('<ul>').append($(mhtml));// append DOM only one time.
+          $('.slider').append($ul);
         });
     });
 });  
