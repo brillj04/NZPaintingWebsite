@@ -27,7 +27,8 @@ $(document).ready(function(){
                   popularProd  += '</li>';
                   return i < 4; //stop loop after 5th item
              }
-
+           });
+            $.each(result.products, function(i, field){
              if (field.Onsale == "Yes"){
 
                   onsaleProd   += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
