@@ -46,17 +46,19 @@ $(document).ready(function(){
         $.getJSON("ProductsPaintings.json", function(result){
          var mhtml = '';
             $.each(result.products, function(i, field){
+             if (field.Popularity == "High"){
+              
                 mhtml += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
                 mhtml += '<h1 class="title">'+field.Title+'</h1>';
                 mhtml += '<h3 class="category">'+field.Category+'</h3>';
                 mhtml += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field.price+'</p>';
                 mhtml += '<p class="desc" style="font-size:20px;">'+field.Description+'</p>';
-                mhtml += '<b>Popularity: </b>';
-                mhtml += '<span class="popularity">'+field.Popularity+'</span>';
+                mhtml += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>"'+field.Popularity+'</span>';
                 mhtml += '<br>';
-                mhtml += '<b>OnSale Status: </b>';
-                mhtml += '<span class="onsale">'+field.Onsale+'</span>';
+                mhtml += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field.Onsale+'</span>';
                 mhtml += '</li>';
+              return false;
+             }
             });
         var $ul = $('<ul id="prodList">').append($(mhtml));// append DOM only one time.
         $('#popularProducts').append($ul);
