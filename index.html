@@ -49,14 +49,13 @@ $(document).ready(function(){
                 mhtml += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
                 mhtml += '<h1 class="title">'+field.Title+'</h1>';
                 mhtml += '<h3 class="category">'+field.Category+'</h3>';
+                mhtml += '<p class="price">Price: $'+field.price+'</p>';
                 mhtml += '<p class="desc">'+field.Description+'</p>';
                 mhtml += '<b>Popularity: </b>';
                 mhtml += '<span class="popularity">'+field.Popularity+'</span>';
                 mhtml += '<br>';
                 mhtml += '<b>OnSale Status: </b>';
                 mhtml += '<span class="onsale">'+field.Onsale+'</span>';
-                mhtml += '<span class="price">'+field.price+'</span>';
-
                 mhtml += '</li>';
             });
         var $ul = $('<ul id="prodList">').append($(mhtml));// append DOM only one time.
