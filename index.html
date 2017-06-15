@@ -5,8 +5,7 @@
 <title>NZ Painting - Home</title>
 <link rel="stylesheet" href="MainCSS.css">
 <script src="MainJS.js">
-   var data = {"products":[
-{"ID":"1",
+   var data = '[{"ID":"1",
 "Title":"Blue Fireworks",
 "Category":"Abstract",
 "Description":"Abstract painting of fireworks",
@@ -17,18 +16,18 @@
 {"ID":"2",
 "Title":"Flowers",
 "Category":"Still Life",
-"Description":"Beautiful pot of flowers",
+"Descriptionhttps://stackoverflow.com/users/840208/krishna-bhargavi":"Beautiful pot of flowers",
 "Popularity":"Normal",
  "Onsale":"Yes" , 
  "ImageURL":"Product2.jpg"}
-]};
-data.products.forEach( function(obj) {
-  var productImg = new Image();
-  productImg.src = obj.ImageURL;
-  productImg.setAttribute("class", "banner-img");
-  productImg.setAttribute("alt", "effy");
-  document.getElementById("img-container").appendChild(productImg);
-});
+]';
+var obj = JSON.parse(data);
+var images = '';
+for( var i=0, max<.length; ++i ) {
+  images += '<img src="' + obj[i]['ImageURL'] + '" />';
+}
+
+document.getElementById( 'popularProducts' ).innerHTML = images;
    </script>
 <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
