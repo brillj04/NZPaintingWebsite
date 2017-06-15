@@ -24,10 +24,12 @@ $(document).ready(function(){
                 mhtml += '<br>';
                 mhtml += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field.Onsale+'</span>';
                 mhtml += '</li>';
-                return false;
+                     break;
+               
                       }
-                      
+                     return false; 
              }
+                    
             });
         var $ul = $('<ul id="prodList">').append($(mhtml));// append DOM only one time.
         $('#popularProducts').append($ul);
