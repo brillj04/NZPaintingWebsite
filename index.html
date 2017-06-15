@@ -28,7 +28,7 @@ $(document).ready(function(){
                   return i < 4; //stop loop after 5th item
              }
 
-             if (field.Onsale == "Yes"){
+             else if (field.Onsale == "Yes"){
 
                   onsaleProd   += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
                   onsaleProd   += '<h1 class="title">'+field.Title+'</h1>';
