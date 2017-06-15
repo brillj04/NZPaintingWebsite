@@ -15,7 +15,7 @@ $(document).ready(function(){
            
              if (field1.Popularity == "High"){
                      
-                  popularProd  += '<li><div class="bannerImg"><img src="'+field1.imgPath+'" style="width:100%"/></div>';
+                  popularProd  += '<li><div class="bannerImg"><img src="'+field1.imgPath+'" style="width:100% display:none;"/></div>';
                   popularProd  += '<h1 class="title">'+field1.Title+'</h1>';
                   popularProd  += '<h3 class="category">'+field1.Category+'</h3>';
                   popularProd  += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field1.price+'</p>';
@@ -29,7 +29,7 @@ $(document).ready(function(){
              }
            });
         var $ul1 = $('<ul id="popularprodList">').append($(popularProd));// append DOM only one time.
-        //$('#popularProducts').append($ul1);
+        $('#popularProducts').append($ul1);
         var $ul2 = $('<ul id="onsaleprodList">').append($(onsaleProd));// append DOM only one time.
         $('#dealsOftheDay').append($ul2);
         });
