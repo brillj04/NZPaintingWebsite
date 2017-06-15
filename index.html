@@ -10,26 +10,43 @@
 $(document).ready(function(){
 
         $.getJSON("ProductsPaintings.json", function(result){
-         var mhtml = '';
+         var popularProd = '';
+         var onsaleProd = '';
             $.each(result.products, function(i, field){
                     
              if (field.Popularity == "High"){
                      
-                mhtml += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
-                mhtml += '<h1 class="title">'+field.Title+'</h1>';
-                mhtml += '<h3 class="category">'+field.Category+'</h3>';
-                mhtml += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field.price+'</p>';
-                mhtml += '<p class="desc" style="font-size:20px;">'+field.Description+'</p>';
-                mhtml += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field.Popularity+'</span>';
-                mhtml += '<br>';
-                mhtml += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field.Onsale+'</span>';
-                mhtml += '</li>';
-                  return i < 4;
+                  popularProd  += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
+                  popularProd  += '<h1 class="title">'+field.Title+'</h1>';
+                  popularProd  += '<h3 class="category">'+field.Category+'</h3>';
+                  popularProd  += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field.price+'</p>';
+                  popularProd  += '<p class="desc" style="font-size:20px;">'+field.Description+'</p>';
+                  popularProd  += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field.Popularity+'</span>';
+                  popularProd  += '<br>';
+                  popularProd  += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field.Onsale+'</span>';
+                  popularProd  += '</li>';
+                  return i < 4; //stop loop after 5th item
+             }
+
+             if (field.Onsale == "Yes"){
+
+                  onsaleProd   += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
+                  onsaleProd   += '<h1 class="title">'+field.Title+'</h1>';
+                  onsaleProd   += '<h3 class="category">'+field.Category+'</h3>';
+                  onsaleProd   += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field.price+'</p>';
+                  onsaleProd   += '<p class="desc" style="font-size:20px;">'+field.Description+'</p>';
+                  onsaleProd   += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field.Popularity+'</span>';
+                  onsaleProd   += '<br>';
+                  onsaleProd   += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field.Onsale+'</span>';
+                  onsaleProd   += '</li>';
+                  return i < 4; //stop loop after 5th item
              }
                     
             });
-        var $ul = $('<ul id="prodList">').append($(mhtml));// append DOM only one time.
-        $('#popularProducts').append($ul);
+        var $ul1 = $('<ul id="popularprodList">').append($(popularProd));// append DOM only one time.
+        var $ul2 = $('<ul id="onsaleprodList">').append($(onsaleProd));// append DOM only one time.
+        $('#popularProducts').append($ul1);
+        $('#dealsOftheDay').append($ul2);
         });
 });  
 </script>
@@ -65,11 +82,13 @@ $(document).ready(function(){
     
 
  <section id="popularProducts">
-
+ <h3>Popular Paintings </h3>
 </section>
 
 
 <section id="dealsOftheDay">
+  <h3>Deals of the Day </h3>
+        
 </section>
 
      <footer>
