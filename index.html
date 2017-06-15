@@ -39,7 +39,7 @@
  <section id="popularProducts">
      <div id="img-container">
     </div>
-     <p id="img-info"></p>
+     <ul id="ct"></ul>
  <script>
 var data = {
  "products":[{"ID":"1",
@@ -69,10 +69,16 @@ data.products.forEach( function(obj) {
 var obj = JSON.parse(data);
  var url = JSON.parse('ProductsPaintings.json');
      
-  data.products.forEach( function(obj) {
+$(document).ready(function(){
 
-document.getElementById("img-info").innerHTML =
-obj.employees[1].firstName + " " + obj.employees[1].lastName;
+    $("button").click(function(){
+        $.getJSON(url, {}, function(data) {
+            var $ul = $('#ul')
+            $.each(data, function(idx, item){
+                $ul.append('<li style="color: ' + item.ID + '">' + item.Title + '-' + item.Category +'</li>')
+            })
+        });
+    });
 });
  
    </script>
