@@ -24,7 +24,11 @@ function myFunction(xml) {
 }
 
 
-
+/*===============JSON=======================*/
+//Retrieving data:
+text = localStorage.getItem("ProductsPaintings.json");
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML = obj.name;
 
 
 /*=============Membership form validation==============================*/
