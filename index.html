@@ -51,15 +51,13 @@
 var data = {"products":[
 
 
-{
- "ImageURL":"Images/Products/Product1.jpg"},
+{"imagePath":"Images/Products/Product1.jpg"},
 
-{ 
- "ImageURL":"Images/Products/Product2.jpg"}
+{"imagePath":"Images/Products/Product2.jpg"}
 ]};
-data.products.forEach( function(obj) {
+data.products.imagePath.forEach( function(obj) {
   var img = new Image();
-  img.src = obj.ImageURL;
+  img.src = obj.ImagePath;
   img.setAttribute("class", "banner-img");
   img.setAttribute("alt", "effy");
   document.getElementById("img-container").appendChild(img);
