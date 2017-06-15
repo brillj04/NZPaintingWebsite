@@ -43,7 +43,24 @@
        </tbody>
    </table>
     
-    
+    <script>
+
+    $(function() {
+
+
+   var people = [];
+
+   $.getJSON('people.json', function(data) {
+       $.each(data.person, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.Title + "</td>" +
+           "<td>" + f.Category + "</td>" + "<td>" + f.Description+ "</td>" + "<td>" + f.Popularity + "</td>" + "<td>" + f.Onsale + "</td>"+"</tr>"
+           $(tblRow).appendTo("#productData tbody");
+     });
+
+   });
+
+});
+</script>
     
  </section>
 
