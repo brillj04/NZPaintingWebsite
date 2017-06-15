@@ -70,12 +70,11 @@ data.products.forEach( function(obj) {
 });
      
      
-$(document).ready(function(){
-    $("button").click(function(){
-        $.ajax({url: "ProductsPaintings.json", success: function(result){
-            $("#div1").html(result);
-        }});
-    });
+var json = $.parseJSON(j);
+$(json).each(function(i,val){
+    $.each(val,function(k,v){
+          console.log(k+" : "+ v);     
+});
 });
    </script>
 </section>
