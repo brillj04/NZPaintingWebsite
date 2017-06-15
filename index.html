@@ -37,51 +37,12 @@
     
 
  <section id="popularProducts">
-     <div id="img-container">
-    </div>
-
+    
 <button>Get JSON data</button>
 
 <div id="prods"></div>
  <script>
-var data = {
- "products":[{"ID":"1",
-"Title":"Blue Fireworks",
-"Category":"Abstract",
-"Description":"Abstract painting of fireworks",
-"Popularity":"High",
-"Onsale":"No" ,
- "imagePath":"Images/Products/Product1.jpg"},
-{"ID":"1",
-"Title":"Blue Fireworks",
-"Category":"Abstract",
-"Description":"Abstract painting of fireworks",
-"Popularity":"High",
-"Onsale":"No" ,
-"imagePath":"Images/Products/Product2.jpg"}
-]};
-/*data.products.forEach( function(obj) {
-  var img = new Image();
-  img.src = obj.imagePath;
-  img.setAttribute("class", "banner-img");
-  img.setAttribute("alt", "painting_product");
-  img.setAttribute("style", "width:100px;heigth:100px;")
-  document.getElementById("img-container").appendChild(img);
-});*/
-     
-     
-/*$(document).ready(function(){
-    $("button").click(function(){
-        $.getJSON("ProductsPaintings.json", function(result){
-            $.each(result.products, function(i, field){
-                $("#prods").append(field.ID + " ");
-            });
-        });
-    });
-});*/
-  
 $(document).ready(function(){
-    $("button").click(function(){
         $.getJSON("ProductsPaintings.json", function(result){
          var mhtml = '';
             $.each(result.products, function(i, field){
@@ -96,7 +57,6 @@ $(document).ready(function(){
           var $ul = $('<ul>').append($(mhtml));// append DOM only one time.
           $('#prods').append($ul);
         });
-    });
 });  
    </script>
 </section>
