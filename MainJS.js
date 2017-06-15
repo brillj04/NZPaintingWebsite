@@ -1,5 +1,5 @@
 
-function myFunction(xml) {
+/*function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
   var table="<tr><th>TITLE</th><th>CATEGORY</th></tr>";
@@ -12,16 +12,11 @@ function myFunction(xml) {
     "</td></tr>";
   }
   document.getElementById("demo").innerHTML = table;
-}
+}*/
 
 
-/*===============JSON=======================*/
-//Retrieving data:
-function loadXMLdoc(){
-text = localStorage.getItem("ProductsPaintings.json");
-obj = JSON.parse(text);
-document.getElementById("demo").innerHTML = obj.name;
-}
+
+
 
 /*=============Membership form validation==============================*/
 function submitForm() {
