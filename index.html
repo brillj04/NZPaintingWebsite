@@ -49,13 +49,13 @@ $(document).ready(function(){
                 mhtml += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
                 mhtml += '<h1 class="title">'+field.Title+'</h1>';
                 mhtml += '<h3 class="category">'+field.Category+'</h3>';
-                mhtml += '<p> class="desc">'+field.Description+'</p>';
-                mhtml += '<span> class="popularity">'+field.Popularity+'</span>';
-                mhtml += '<span> class="onsale">'+field.Onsale+'</span>';
+                mhtml += '<p class="desc">'+field.Description+'</p>';
+                mhtml += '<span class="popularity">'+field.Popularity+'</span>';
+                mhtml += '<span class="onsale">'+field.Onsale+'</span>';
                 mhtml += '</li>';
             });
           var $ul = $('<ul>').append($(mhtml));// append DOM only one time.
-          $('#prods').append($ul);
+          $('#popularProducts').append($ul);
         });
 });  
    </script>
