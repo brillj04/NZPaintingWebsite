@@ -30,43 +30,16 @@
 <section id="homeDisplay">
    <h3> Introduction </h3>
  
-      <table id= "productData" border="2">
-  <thead>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Description</th>
-            <th>Popularity</th>
-            <th>Onsale</th>
-        </thead>
-      <tbody>
-
-       </tbody>
-   </table>
-    
-    <script>
-
-    $(function() {
-
-
-   var ProductsPaintings = [];
-
-   $.getJSON('ProductsPaintings.json', function(data) {
-       $.each(data.products, function(i, f) {
-          var tblRow = "<tr>" + "<td>" + f.Title + "</td>" +
-           "<td>" + f.Category + "</td>" + "<td>" + f.Description+ "</td>" + "<td>" + f.Popularity + "</td>" + "<td>" + f.Onsale + "</td>"+"</tr>"
-           $(tblRow).appendTo("#productData tbody");
-     });
-
-   });
-
-});
-</script>
+ 
     
  </section>
+    
+    
 
  <section id="popularProducts">
-     <div class="banner-section" id="img-container">
+     <div id="img-container">
     </div>
+     <p if="img-info"></p>
  <script>
 var data = {"products":[
 {"Onsale":"No" ,
@@ -78,9 +51,19 @@ data.products.forEach( function(obj) {
   var img = new Image();
   img.src = obj.imagePath;
   img.setAttribute("class", "banner-img");
-  img.setAttribute("alt", "effy");
+  img.setAttribute("alt", "painting_product");
   img.setAttribute("style", "width:100px;heigth:100px;")
   document.getElementById("img-container").appendChild(img);
+});
+     
+  $.getJSON("ProductsPaintings.json", function(json) {
+      document.getElementById("img-info").appendChild(json);; // this will show the info it in firebug console
+});
+ 
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "body" );
 });
    </script>
 </section>
