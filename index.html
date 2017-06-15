@@ -12,34 +12,34 @@ $(document).ready(function(){
         $.getJSON("ProductsPaintings.json", function(result){
          var popularProd = '';
          var onsaleProd = '';
-            $.each(result.products, function(i, field){
+            $.each(result.products, function(i, field1){
            
-             if (field.Popularity == "High"){
+             if (field1.Popularity == "High"){
                      
-                  popularProd  += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
-                  popularProd  += '<h1 class="title">'+field.Title+'</h1>';
-                  popularProd  += '<h3 class="category">'+field.Category+'</h3>';
-                  popularProd  += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field.price+'</p>';
-                  popularProd  += '<p class="desc" style="font-size:20px;">'+field.Description+'</p>';
-                  popularProd  += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field.Popularity+'</span>';
+                  popularProd  += '<li><div class="bannerImg"><img src="'+field1.imgPath+'" style="width:100px;height:100px;"/></div>';
+                  popularProd  += '<h1 class="title">'+field1.Title+'</h1>';
+                  popularProd  += '<h3 class="category">'+field1.Category+'</h3>';
+                  popularProd  += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field1.price+'</p>';
+                  popularProd  += '<p class="desc" style="font-size:20px;">'+field1.Description+'</p>';
+                  popularProd  += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field1.Popularity+'</span>';
                   popularProd  += '<br>';
-                  popularProd  += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field.Onsale+'</span>';
+                  popularProd  += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field1.Onsale+'</span>';
                   popularProd  += '</li>';
                   return i < 4; //stop loop after 5th item
              
              }
            });
-            $.each(result.products, function(i, field){
-             if (field.Onsale == "Yes"){
+            $.each(result.products, function(i, field2){
+             if (field2.Onsale == "Yes"){
 
-                  onsaleProd   += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
-                  onsaleProd   += '<h1 class="title">'+field.Title+'</h1>';
-                  onsaleProd   += '<h3 class="category">'+field.Category+'</h3>';
-                  onsaleProd   += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field.price+'</p>';
-                  onsaleProd   += '<p class="desc" style="font-size:20px;">'+field.Description+'</p>';
-                  onsaleProd   += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field.Popularity+'</span>';
+                  onsaleProd   += '<li><div class="bannerImg"><img src="'+field2.imgPath+'" style="width:100px;height:100px;"/></div>';
+                  onsaleProd   += '<h1 class="title">'+field2.Title+'</h1>';
+                  onsaleProd   += '<h3 class="category">'+field2.Category+'</h3>';
+                  onsaleProd   += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field2.price+'</p>';
+                  onsaleProd   += '<p class="desc" style="font-size:20px;">'+field2.Description+'</p>';
+                  onsaleProd   += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field2.Popularity+'</span>';
                   onsaleProd   += '<br>';
-                  onsaleProd   += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field.Onsale+'</span>';
+                  onsaleProd   += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field2.Onsale+'</span>';
                   onsaleProd   += '</li>';
                       return i < 4;//stop loop after 5th item
          
