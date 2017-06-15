@@ -46,7 +46,7 @@ $(document).ready(function(){
         $.getJSON("ProductsPaintings.json", function(result){
          var mhtml = '';
             $.each(result.products, function(i, field){
-                mhtml += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
+                mhtml += '<li id="prodList"><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
                 mhtml += '<h1 class="title">'+field.Title+'</h1>';
                 mhtml += '<h3 class="category">'+field.Category+'</h3>';
                 mhtml += '<p class="desc">'+field.Description+'</p>';
@@ -54,7 +54,7 @@ $(document).ready(function(){
                 mhtml += '<span class="onsale">'+field.Onsale+'</span>';
                 mhtml += '</li>';
             });
-          var $ul = $('<ul>').append($(mhtml));// append DOM only one time.
+          var $ul = $('<ul id="prodUnorderedList">').append($(mhtml));// append DOM only one time.
           $('#popularProducts').append($ul);
         });
 });  
