@@ -37,12 +37,9 @@
     
 
  <section id="popularProducts">
-    
-<button>Get JSON data</button>
-  <div id="prods"></div>
  <script>
 $(document).ready(function(){
-  $("button").click(function(){
+
         $.getJSON("ProductsPaintings.json", function(result){
          var mhtml = '';
             $.each(result.products, function(i, field){
@@ -63,7 +60,6 @@ $(document).ready(function(){
         var $ul = $('<ul id="prodList">').append($(mhtml));// append DOM only one time.
         $('#popularProducts').append($ul);
         });
-      });
 });  
    </script>
 </section>
