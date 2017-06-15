@@ -7,7 +7,7 @@
 "Description":"Abstract painting of fireworks",
 "Popularity":"High",
  "Onsale":"No" , 
- "ImageURL":"Images/Products/Product1.jpg"},
+ "imgPath":"Product1.jpg"},
 
 {"ID":"2",
 "Title":"Flowers",
@@ -15,7 +15,7 @@
 "Description":"Beautiful pot of flowers",
 "Popularity":"Normal",
  "Onsale":"Yes" , 
- "ImageURL":"Images/Products/Product2.jpg"}
+ "imgPath":"Product2.jpg"}
 
 
 ]}
