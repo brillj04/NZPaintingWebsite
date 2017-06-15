@@ -12,8 +12,9 @@ $(document).ready(function(){
         $.getJSON("ProductsPaintings.json", function(result){
          var mhtml = '';
             $.each(result.products, function(i, field){
+                    
              if (field.Popularity == "High"){
-              
+                      for(var i=0; i < 4; ++i) {
                 mhtml += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
                 mhtml += '<h1 class="title">'+field.Title+'</h1>';
                 mhtml += '<h3 class="category">'+field.Category+'</h3>';
@@ -23,7 +24,9 @@ $(document).ready(function(){
                 mhtml += '<br>';
                 mhtml += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field.Onsale+'</span>';
                 mhtml += '</li>';
-              return false;
+                
+                      }
+                      return false;
              }
             });
         var $ul = $('<ul id="prodList">').append($(mhtml));// append DOM only one time.
