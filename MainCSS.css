@@ -32,7 +32,7 @@ header h1{
 		-webkit-text-fill-color: transparent;
 }
 
-ul{
+#prodList{
    list-style-type: none;
     overflow: hidden;
 	border-radius: 5px;
