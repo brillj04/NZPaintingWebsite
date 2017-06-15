@@ -48,6 +48,7 @@ $(document).ready(function(){
             $.each(result.products, function(i, field){
                 mhtml += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
                 mhtml += '<h1 class="title">'+field.Title+'</h1>';
+                mhtml += '<h1 class="price">Price: $'+field.price+'</h1>';
                 mhtml += '<h3 class="category">'+field.Category+'</h3>';
                 mhtml += '<p class="desc">'+field.Description+'</p>';
                 mhtml += '<b>Popularity: </b>';
