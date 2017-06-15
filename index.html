@@ -5,6 +5,30 @@
 <title>NZ Painting - Home</title>
 <link rel="stylesheet" href="MainCSS.css">
 <script src="MainJS.js">
+   var data = {"products":[
+{"ID":"1",
+"Title":"Blue Fireworks",
+"Category":"Abstract",
+"Description":"Abstract painting of fireworks",
+"Popularity":"High",
+ "Onsale":"No" , 
+ "ImageURL":"Images/Products/Product1.jpg"},
+
+{"ID":"2",
+"Title":"Flowers",
+"Category":"Still Life",
+"Description":"Beautiful pot of flowers",
+"Popularity":"Normal",
+ "Onsale":"Yes" , 
+ "ImageURL":"Images/Products/Product2.jpg"}
+]};
+data.products.forEach( function(obj) {
+  var productImg = new Image();
+  productImg.src = obj.ImageURL;
+  productImg.setAttribute("class", "banner-img");
+  productImg.setAttribute("alt", "effy");
+  document.getElementById("img-container").appendChild(productImg);
+});
    </script>
 <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
@@ -28,9 +52,12 @@
 </nav>
 
 <section id="homeDisplay">
-<p>Dfbdhf</p>
+   <h3> Introduction </h3>
+   
+   
 </section>
- <div id="id01"></div>
+<div class="banner-section" id="img-container">
+    </div>
  
  
 <footer>
