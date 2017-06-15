@@ -56,9 +56,11 @@ var data = {"products":[
 ]};
 data.products.forEach( function(obj) {
   var img = new Image();
-  img.src = obj.ImagePath;
+  img.src = obj.imagePath;
   img.setAttribute("class", "banner-img");
   img.setAttribute("alt", "effy");
+  img.setAttribute("style", "width:200px");
+  img.setAttribute("style", "height/:200px");
   document.getElementById("img-container").appendChild(img);
 });
    </script>
