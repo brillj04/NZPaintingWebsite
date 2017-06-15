@@ -73,7 +73,7 @@ data.products.forEach( function(obj) {
 $(document).ready(function(){
     $("button").click(function(){
         $.getJSON("ProductsPaintings.json", function(result){
-            $.each(result.ID, function(i, field){
+            $.each(result.products, function(i, field){
                 $("#prods").append(field + " ");
             });
         });
