@@ -85,11 +85,7 @@ $(document).ready(function(){
         $.getJSON("ProductsPaintings.json", function(result){
          var mhtml = '';
             $.each(result.products, function(i, field){
-             var img = new Image();
-                img.src = obj.imagePath;
-                img.setAttribute("alt", "painting_product");
-                img.setAttribute("style", "width:100px;heigth:100px;")
-                mhtml += '<li><div class="bannerImg"><img src="'+field.img+'"/></div>';
+                mhtml += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
                 mhtml += '<h1 class="title">'+field.Title+'</h1>';
                 mhtml += '<h3 class="category">'+field.Category+'</h3>';
                 mhtml += '<p> class="desc">'+field.Description+'</p>';
