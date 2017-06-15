@@ -12,7 +12,7 @@ $(document).ready(function(){
         $.getJSON("ProductsPaintings.json", function(result){
          var mhtml = '';
             $.each(result.products, function(i, field){
-                     for(var i=0; i < 4; ++i) {
+                    
              if (field.Popularity == "High"){
                      
                 mhtml += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
@@ -25,9 +25,7 @@ $(document).ready(function(){
                 mhtml += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field.Onsale+'</span>';
                 mhtml += '</li>';
                   
-               
-                      }
-                   
+                   return false;
              }
                     
             });
