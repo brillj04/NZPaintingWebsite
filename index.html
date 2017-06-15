@@ -10,7 +10,6 @@
 $(document).ready(function(){
 
         $.getJSON("ProductsPaintings.json", function(result){
-       //  var fivePopProd =[];
          var popularProd = '';
          var onsaleProd = '';
             $.each(result.products, function(i, field){
@@ -31,8 +30,6 @@ $(document).ready(function(){
              }
            });
             $.each(result.products, function(i, field){
-                    
-          //   for (int i = 0;i <= 5+1; i++){      
              if (field.Onsale == "Yes"){
 
                   onsaleProd   += '<li><div class="bannerImg"><img src="'+field.imgPath+'" style="width:100px;height:100px;"/></div>';
@@ -44,10 +41,8 @@ $(document).ready(function(){
                   onsaleProd   += '<br>';
                   onsaleProd   += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field.Onsale+'</span>';
                   onsaleProd   += '</li>';
-                      return i < 4;
-                  //fivePopProd.push(i);//stop loop after 5th item
-            // }
-          
+                      return i < 4;//stop loop after 5th item
+         
            }
                     
             });
