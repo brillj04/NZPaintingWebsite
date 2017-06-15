@@ -39,9 +39,9 @@
  <section id="popularProducts">
      <div id="img-container">
     </div>
-<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+<h1 id="title">19. Using jQuery to retrieve JSON via AJAX</h1>
 
-<button>Get External Content</button>
+  <a href="#" id="clickme">Get JSON Data</a>
      
  <script>
 var data = {
@@ -70,11 +70,33 @@ data.products.forEach( function(obj) {
 });
      
      
-var json = $.parseJSON(data);
-$(json).each(function(i,val){
-    $.each(val,function(k,v){
-          console.log(k+" : "+ v);     
-});
+$(function() {  
+  $('#clickme').click(function() {
+       $.ajax({
+       url: 'ProductsPaintings.json',
+       dataType: 'json',
+       success: function(data) {
+          var items = [];
+
+          $.each(data, function(key, val) {
+
+            items.push('<li id="' + key + '">' + val + '</li>');    
+
+          });
+
+          $('<ul/>', {
+             'class': 'interest-list',
+             html: items.join('')
+          }).appendTo('body');
+
+       },
+      statusCode: {
+         404: function() {
+           alert('There was a problem with the server.  Try again soon!');
+         }
+       }
+    });
+  });
 });
    </script>
 </section>
