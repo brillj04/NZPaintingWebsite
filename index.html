@@ -5,26 +5,7 @@
 <title>NZ Painting - Home</title>
 <link rel="stylesheet" href="MainCSS.css">
 <script src="MainJS.js"></script>
-   <script>
-      
-    $(function() {
- 
- 
-   var ProductsPaintings = [];
- 
-   $.getJSON('ProductsPaintings.json', function(data) {
-       $.each(data.products, function(i, f) {
-          var tblRow = "<tr>" + "<td>" + f.Title + "</td>" +
-           "<td>" + f.Category + "</td>" + "<td>" + f.Description + "</td>" + "<td>" + f.Popularity + "</td>" + "<td>" 
-          + f.Onsale + "</td>" + "</tr>"
-           $(tblRow).appendTo("#productData tbody");
-     });
- 
-   });
- 
-});
 
-   </script>
 <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
  
@@ -48,7 +29,26 @@
 
 <section id="homeDisplay">
    <h3> Introduction </h3>
-   
+      <script>
+      
+    $(function() {
+ 
+ 
+   var ProductsPaintings = [];
+ 
+   $.getJSON('ProductsPaintings.json', function(data) {
+       $.each(data.products, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.Title + "</td>" +
+           "<td>" + f.Category + "</td>" + "<td>" + f.Description + "</td>" + "<td>" + f.Popularity + "</td>" + "<td>" 
+          + f.Onsale + "</td>" + "</tr>"
+           $(tblRow).appendTo("#productData tbody");
+     });
+ 
+   });
+ 
+});
+
+   </script>
       <table id= "productData" border="2">
   <thead>
             <th>Title</th>
