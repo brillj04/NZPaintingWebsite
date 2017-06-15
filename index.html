@@ -60,14 +60,14 @@ var data = {
 "Onsale":"No" ,
 "imagePath":"Images/Products/Product2.jpg"}
 ]};
-data.products.forEach( function(obj) {
+/*data.products.forEach( function(obj) {
   var img = new Image();
   img.src = obj.imagePath;
   img.setAttribute("class", "banner-img");
   img.setAttribute("alt", "painting_product");
   img.setAttribute("style", "width:100px;heigth:100px;")
   document.getElementById("img-container").appendChild(img);
-});
+});*/
      
      
 /*$(document).ready(function(){
@@ -85,7 +85,11 @@ $(document).ready(function(){
         $.getJSON("ProductsPaintings.json", function(result){
          var mhtml = '';
             $.each(result.products, function(i, field){
-                mhtml += '<li><div class="bannerImg"><img src="'+field.imgPath+'"/></div>';
+             var img = new Image();
+                img.src = obj.imagePath;
+                img.setAttribute("alt", "painting_product");
+                img.setAttribute("style", "width:100px;heigth:100px;")
+                mhtml += '<li><div class="bannerImg"><img src="'+field.img+'"/></div>';
                 mhtml += '<h1 class="title">'+field.Title+'</h1>';
                 mhtml += '<h3 class="category">'+field.Category+'</h3>';
                 mhtml += '<p> class="desc">'+field.Description+'</p>';
