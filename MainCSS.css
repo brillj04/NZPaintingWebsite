@@ -39,7 +39,7 @@ ul {
     padding: 10px;
     overflow: hidden;
     background-color: #000033;
-	border-radius: 0px 0px 8px 8px;
+    border-radius: 0px 0px 8px 8px;
 	
 }
 
@@ -156,6 +156,7 @@ input[type=submit]:hover {
 	color: black;
 	font-family: 'Alegreya', serif;
 	font-size: 16px;
+	float: left;
 }
 
 
