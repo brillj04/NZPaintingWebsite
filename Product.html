@@ -15,7 +15,7 @@ $(document).ready(function(){
            
              if (field1.Popularity == "High"){
                      
-                  popularProd  += '<li><div class="bannerImg"><img class="mySlides" src="'+field1.imgPath+'" style="width:100%"/></div>';
+                  popularProd  += '<li><div class="bannerImg"><img src="'+field1.imgPath+'" style="width:100%"/></div>';
                   popularProd  += '<h1 class="title">'+field1.Title+'</h1>';
                   popularProd  += '<h3 class="category">'+field1.Category+'</h3>';
                   popularProd  += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field1.price+'</p>';
@@ -68,6 +68,25 @@ $(document).ready(function(){
 
 <section id="popularProducts">
  <h3>Popular Paintings </h3>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("bannerImg");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 
 </section>
 
@@ -76,10 +95,7 @@ $(document).ready(function(){
   <h3>Deals of the Day </h3>
         
 </section>
- <script>
-  var slideIndex = 0;
-carousel();
- </script>
+
 <footer>
 <hr>
 &copy Bekfasts 2017
