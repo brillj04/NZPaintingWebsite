@@ -4,8 +4,57 @@
 <meta charset="UTF-8">
 <title>NZ Painting - Products</title>
 <link rel="stylesheet" href="MainCSS.css">
-<script type="text/javascript" src="MainJS.js"></script>
+<script src="MainJS.js"></script>
+<script src="jquery-3.2.1.min.js"></script>   
+<script>
+$(document).ready(function(){
+        $.getJSON("ProductsPaintings.json", function(result){
+         var popularProd = '';
+         var onsaleProd = '';
+            $.each(result.products, function(i, field1){
+           
+             if (field1.Popularity == "High"){
+                     
+                  popularProd  += '<li><div class="bannerImg"><img class="mySlides" img src="'+field1.imgPath+'" style="width:100px;height:100px;"/></div>';
+                  popularProd  += '<h1 class="title">'+field1.Title+'</h1>';
+                  popularProd  += '<h3 class="category">'+field1.Category+'</h3>';
+                  popularProd  += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field1.price+'</p>';
+                  popularProd  += '<p class="desc" style="font-size:20px;">'+field1.Description+'</p>';
+                  popularProd  += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field1.Popularity+'</span>';
+                  popularProd  += '<br>';
+                  popularProd  += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field1.Onsale+'</span>';
+                  popularProd  += '</li>';
+                  return i < 20; //stop loop after 5th item
+             
+             }
+           });
+            $.each(result.products, function(i, field2){
+             if (field2.Onsale == "Yes"){
+                  onsaleProd   += '<li><div class="bannerImg"><img src="'+field2.imgPath+'" style="width:100px;height:100px;"/></div>';
+                  onsaleProd   += '<h1 class="title">'+field2.Title+'</h1>';
+                  onsaleProd   += '<h3 class="category">'+field2.Category+'</h3>';
+                  onsaleProd   += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field2.price+'</p>';
+                  onsaleProd   += '<p class="desc" style="font-size:20px;">'+field2.Description+'</p>';
+                  onsaleProd   += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field2.Popularity+'</span>';
+                  onsaleProd   += '<br>';
+                  onsaleProd   += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field2.Onsale+'</span>';
+                  onsaleProd   += '</li>';
+                      return i < 20;//stop loop after 5th item
+         
+           }
+                    
+            });
+        var $ul1 = $('<ul id="popularprodList">').append($(popularProd));// append DOM only one time.
+        $('#popularProducts').append($ul1);
+        var $ul2 = $('<ul id="onsaleprodList">').append($(onsaleProd));// append DOM only one time.
+        $('#dealsOftheDay').append($ul2);
+        });
+});  
+</script>
+        
+<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+ 
 </head>
 
 <body>
@@ -16,7 +65,7 @@
 </header>
 
 <nav>
-<ul>
+<ul id="navBar">
   <li><a href="About.html">About Us</a></li>
   <li><a href="Membership.html">Membership Sign up</a></li>
   <li><a href="Product.html">Our Products</a></li>
@@ -24,7 +73,28 @@
 </ul>
 </nav>
 
+<section id="homeDisplay">
+   <h3> Introduction </h3>
+ 
+ 
+    
+ </section>
+    
+    
 
+<section id="popularProducts">
+ <h3>Popular Paintings </h3>
+ <script>
+  var slideIndex = 0;
+carousel();
+ </script>
+</section>
+
+
+<section id="dealsOftheDay">
+  <h3>Deals of the Day </h3>
+        
+</section>
 
 <footer>
 <hr>
