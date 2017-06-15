@@ -5,30 +5,6 @@
 <title>NZ Painting - Products</title>
 <link rel="stylesheet" href="MainCSS.css">
 <script type="text/javascript" src="MainJS.js"></script>
-<script type="text/javascript">
-	 $(document).ready(function(){
-	$.ajax({
-	
-        type: "GET",
-	url: "ProductsPaintings.xml",
-	dataType: "xml",
-        success: xmlParser
-	
-        }); 
-   });
-
-function xmlParser(xml) {
-	         $(xml).find("PAINTING").each(function(){
-	         $("#container").append('<div class="painting"><img src="Images/Products/' + $(this).find("IMAGE").text() +'" width="200" height="225" alt="' +
-		     $(this).find("TITLE").text() + '"/><br/><div class="title">' + 
-		     $(this).find("TITLE").text() + '<br/>' +
-		     $(this).find("CATEGORY").text() + '</div></div>');
-		     $(".painting").fadeIn();
-	});
-	
-}
-</script>
-
 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
 </head>
 
