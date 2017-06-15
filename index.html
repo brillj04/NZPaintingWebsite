@@ -19,7 +19,7 @@
 </header>
 
 <nav>
-<ul>
+<ul id="navBar">
   <li><a href="About.html">About Us</a></li>
   <li><a href="Membership.html">Membership Sign up</a></li>
   <li><a href="Product.html">Our Products</a></li>
@@ -54,8 +54,8 @@ $(document).ready(function(){
                 mhtml += '<span class="onsale">'+field.Onsale+'</span>';
                 mhtml += '</li>';
             });
-          var $div = $('<div>').append($(mhtml));// append DOM only one time.
-          $('#popularProducts').append($div);
+          var $ul = $('<ul>').append($(mhtml));// append DOM only one time.
+          $('#popularProducts').append($ul);
         });
 });  
    </script>
