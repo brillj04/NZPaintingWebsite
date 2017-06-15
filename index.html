@@ -49,13 +49,12 @@
     </div>
  <script>
 var data = {"products":[
-
-
-{"imagePath":"Images/Products/Product1.jpg"},
-
-{"imagePath":"Images/Products/Product2.jpg"}
+{"Onsale":"No" ,
+    "imagePath":"Images/Products/Product1.jpg"},
+{"Onsale":"No" ,
+    "imagePath":"Images/Products/Product2.jpg"}
 ]};
-data.products.imagePath.forEach( function(obj) {
+data.products.forEach( function(obj) {
   var img = new Image();
   img.src = obj.ImagePath;
   img.setAttribute("class", "banner-img");
