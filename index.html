@@ -54,8 +54,8 @@ $(document).ready(function(){
                 mhtml += '<span class="onsale">'+field.Onsale+'</span>';
                 mhtml += '</li>';
             });
-          var $ul = $('<ul id="prodUnorderedList">').append($(mhtml));// append DOM only one time.
-          $('#popularProducts').append($ul);
+          var $div = $('<div>').append($(mhtml));// append DOM only one time.
+          $('#popularProducts').append($div);
         });
 });  
    </script>
