@@ -10,7 +10,7 @@
 $(document).ready(function(){
 
         $.getJSON("ProductsPaintings.json", function(result){
-         var fivePopProd = new Array();
+         var fivePopProd =[];
          var popularProd = '';
          var onsaleProd = '';
             $.each(result.products, function(i, field){
@@ -46,7 +46,8 @@ $(document).ready(function(){
                   onsaleProd   += '</li>';
                   fivePopProd.push(field.ID);//stop loop after 5th item
              }
-                     }
+          
+           }
                     
             });
         var $ul1 = $('<ul id="popularprodList">').append($(popularProd));// append DOM only one time.
