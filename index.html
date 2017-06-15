@@ -5,7 +5,21 @@
 <title>NZ Painting - Home</title>
 <link rel="stylesheet" href="MainCSS.css">
 <script src="MainJS.js"></script>
+     <script>
+  $(document).ready(function () {
+  var jsonURL = "ProductsPaintings.json";
+  $.getJSON(jsonURL, function (json)
+  {
+    var imgList= "";
+    $.each(json.products, function () {
+    imgList += '<li><img src= "' + this.imgPath + '"></li>';
+    });
+   $('popularProducts').append(imgList);
+  });
+});
 
+
+   </script>
 <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
  
@@ -29,21 +43,7 @@
 
 <section id="homeDisplay">
    <h3> Introduction </h3>
-      <script>
-  $(document).ready(function () {
-  var jsonURL = "ProductsPaintings.json";
-  $.getJSON(jsonURL, function (json)
-  {
-    var imgList= "";
-    $.each(json.products, function () {
-    imgList += '<li><img src= "' + this.ImageURL + '"></li>';
-    });
-   $('popularProducts').append(imgList);
-  });
-});
-
-
-   </script>
+ 
       <table id= "productData" border="2">
   <thead>
             <th>Title</th>
@@ -57,9 +57,9 @@
        </tbody>
    </table>
 
- <section id="popularProducts">
+ <div id="popularProducts">
 
-</section>
+</div>
 
 
 <section id="dealsOftheDay">
