@@ -14,7 +14,7 @@
 "Title":"Flowers",
 "Category":"Still Life",
 "Description":"Beautiful pot of flowers",
-"Popularity":"Normal",
+"Popularity":"High",
  "Onsale":"Yes" , 
  "imgPath":"Images/Products/Product2.jpg",
   "price":"90"},
@@ -23,7 +23,7 @@
 "Title":"Merry Winter Wonderland",
 "Category":"Christmas",
 "Description":"A winter wonderland",
-"Popularity":"Normal",
+"Popularity":"High",
  "Onsale":"Yes" , 
  "imgPath":"Images/Products/Product3.jpg",
   "price":"230"},
@@ -35,7 +35,23 @@
 "Popularity":"High",
  "Onsale":"Yes" , 
  "imgPath":"Images/Products/Product4.jpg",
-  "price":"230"}
+  "price":"230"},
+ 
+  {"ID":"5",
+"Title":"LakeMountain",
+"Category":"Landscape portrait",
+"Description":"Lake view nountain",
+"Popularity":"High",
+ "Onsale":"Yes" , 
+ "imgPath":"Images/Products/Product5.jpg",
+  "price":"420"},
 
-
+  {"ID":"6",
+"Title":"LakeMountain Bear",
+"Category":"Landscape portrait lay",
+"Description":"Lake view mountain range",
+"Popularity":"Normal",
+ "Onsale":"No" , 
+ "imgPath":"Images/Products/Product7.jpg",
+  "price":"720"}
 ]}
