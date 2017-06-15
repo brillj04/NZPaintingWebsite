@@ -66,13 +66,11 @@ data.products.forEach( function(obj) {
   document.getElementById("img-container").appendChild(img);
 });
      
-var obj = JSON.parse(data);
- var url = JSON.parse('ProductsPaintings.json');
      
 $(document).ready(function(){
-
+var jsonList = 'ProductsPaintings.json';
     $("button").click(function(){
-        $.getJSON(obj, {}, function(data) {
+        $.getJSON(jsonList, {}, function(data) {
             var $ul = $('#ul')
             $.each(data, function(idx, item){
                 $ul.append('<li style="color: ' + item.ID + '">' + item.Title + '-' + item.Category +'</li>')
