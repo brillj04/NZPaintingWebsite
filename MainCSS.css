@@ -32,22 +32,8 @@ header h1{
 		-webkit-text-fill-color: transparent;
 }
 
-#prodList{
-   list-style-type: none;
-    overflow: hidden;
-	border-radius: 5px;
-	background: #f2f2f2; /* For browsers that do not support gradients */
-	background: -webkit-radial-gradient(circle, red, yellow, green); /* Safari */
-	background: -o-radial-gradient(circle, red, yellow, green); /* Opera 11.6 to 12.0 */
-	background: -moz-radial-gradient(circle, red, yellow, green); /* Firefox 3.6 to 15 */
-	background: radial-gradient(circle, #ffccb3, #99bbff); /* Standard syntax */
-        padding: 20px;
-	margin-top: 15px;
-	color: black;
-	font-family: 'Alegreya', serif;
-	font-size: 16px;
-}
-#ul {
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 10px;
