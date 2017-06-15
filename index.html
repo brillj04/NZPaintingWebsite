@@ -39,7 +39,10 @@
  <section id="popularProducts">
      <div id="img-container">
     </div>
-     <ul id="ct"></ul>
+     <<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
  <script>
 var data = {
  "products":[{"ID":"1",
@@ -67,18 +70,17 @@ data.products.forEach( function(obj) {
 });
      
      
-$(document).ready(function(){
-var jsonList = 'ProductsPaintings.json';
-    $("button").click(function(){
-        $.getJSON(jsonList, {}, function(data) {
-            var $ul = $('#ul')
-            $.each(data, function(idx, item){
-                $ul.append('<li style="color: ' + item.ID + '">' + item.Title + '-' + item.Category +'</li>')
-            })
-        });
-    });
-});
- 
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "ProductsPaintings.json", true);
+  xhttp.send();
+}
    </script>
 </section>
 
