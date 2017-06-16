@@ -62,7 +62,7 @@
 	  },
 	   {
 		"productID": 07,
-		"title": "Colour of Thoughts",
+		"Title": "Colour of Thoughts",
 		"category": "Pop Art",
 		"description": "Nine neon skulls",
 		"popularity": "Normal",
@@ -72,7 +72,7 @@
 	  },
 	  {
 		"productID": 08,
-		"title": "Goddess of Wisdom",
+		"Title": "Goddess of Wisdom",
 		"category": "Sculpture",
 		"description": "The Sculpture of Minerva",
 		"popularity": "High",
@@ -82,7 +82,7 @@
 	  },
 	  {
 		"productID": 09,
-		"title": "Doña Isabel de Porcel",
+		"Title": "Doña Isabel de Porcel",
 		"category": "Portrait",
 		"description": "A portrait of Doña Isabel de Porcel",
 		"popularity": "Normal",
@@ -92,7 +92,7 @@
 	  },
 	  {
 		"productID": 10,
-		"title": "Remember Your Name",
+		"Title": "Remember Your Name",
 		"category": "Quote And Text",
 		"description": "pink yellow life quote by Adrienne Rich",
 		"popularity": "Normal",
@@ -102,7 +102,7 @@
 	  },
 	  {
 		"productID": 11,
-		"title": "Edinburgh Castle",
+		"Title": "Edinburgh Castle",
 		"category": "Abstract",
 		"description": "Abstract painting of Edinburgh Castle",
 		"popularity": "High",
@@ -112,7 +112,7 @@
 	  },
 	  {
 		"productID": 12,
-		"title": "Sculpture Gallery",
+		"Title": "Sculpture Gallery",
 		"category": "Sculpture",
 		"description": "The sculpture gallery",
 		"popularity": "High",
@@ -122,7 +122,7 @@
 	  },
 	  {
 		"productID": 13,
-		"title": "More Than This",
+		"Title": "More Than This",
 		"category": "Pop Art",
 		"description": "Menacing Neo:More Than This.",
 		"popularity": "Normal",
@@ -132,7 +132,7 @@
 	  },
 	  {
 		"productID": 14,
-		"title": "Fruits and Champagne",
+		"Title": "Fruits and Champagne",
 		"category": "Still Life",
 		"description": "Fruits and champagne",
 		"popularity": "Normal",
@@ -142,7 +142,7 @@
 	  },
 	  {
 		"productID": 15,
-		"title": "Live Life",
+		"Title": "Live Life",
 		"category": "Quote and Text",
 		"description": "Live Life",
 		"popularity": "High",
@@ -152,7 +152,7 @@
 	  },
 	  {
 		"productID": 16,
-		"title": "Portrait of Cowboy",
+		"Title": "Portrait of Cowboy",
 		"category": "Portrait",
 		"description": "Cowboy holding a glass",
 		"popularity": "High",
@@ -162,7 +162,7 @@
 	  },
 	  {
 		"productID": 17,
-		"title": "Tree and Bird Wall Decoration",
+		"Title": "Tree and Bird Wall Decoration",
 		"category": "Sticker",
 		"description": "Creative tree and birds photo organizer",
 		"popularity": "Normal",
@@ -172,7 +172,7 @@
 	  },
 	  {
 		"productID": 18,
-		"title": "Pine Wood Sunset",
+		"Title": "Pine Wood Sunset",
 		"category": "Split Canvas",
 		"description": "Split sunset on pine wood",
 		"popularity": "High",
@@ -182,7 +182,7 @@
 	  },
 	  {
 		"productID": 19,
-		"title": "Sunset From the Top",
+		"Title": "Sunset From the Top",
 		"category": "Landscape",
 		"description": "Top of mountain,hills and cliffs in a sunset",
 		"popularity": "High",
@@ -192,7 +192,7 @@
 	  },
 	  {
 		"productID": 20,
-		"title": "Christmas of the Family",
+		"Title": "Christmas of the Family",
 		"category": "Christmas",
 		"description": "A family celebrating Christmas together",
 		"popularity": "Normal",
