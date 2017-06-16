@@ -14,7 +14,7 @@ $(document).ready(function(){
          var onsaleProd = '';
             $.each(result.products, function(i, field1){
            
-             if (field1.Popularity == "High"){
+             if (field1.popularity == "High"){
                   popularProd  += '<li><div class="bannerImg"><img src="'+field1.imgPath+'" style="width:100px;height:100px;"/></div>';
                   popularProd  += '<h1 class="title">'+field1.title+'</h1>';
                   popularProd  += '<h3 class="category">'+field1.category+'</h3>';
@@ -29,7 +29,7 @@ $(document).ready(function(){
              }
            });
             $.each(result.products, function(j, field2){
-             if (field2.Onsale == "Yes"){
+             if (field2.onsale == "Yes"){
                   onsaleProd   += '<li><div class="bannerImg"><img src="'+field2.imgPath+'" style="width:100px;height:100px;"/></div>';
                   onsaleProd   += '<h1 class="title">'+field2.title+'</h1>';
                   onsaleProd   += '<h3 class="category">'+field2.category+'</h3>';
