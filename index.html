@@ -12,6 +12,7 @@ $(document).ready(function(){
         $.getJSON("ProductsPaintings.json", function(result){
          var popularProd = '';
          var onsaleProd = '';
+         var prodList = [];
             $.each(result.products, function(i, field1){
            
              if (field1.popularity == "High"){
@@ -24,6 +25,9 @@ $(document).ready(function(){
                   popularProd  += '<br>';
                   popularProd  += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field1.onsale+'</span>';
                   popularProd  += '</li>';
+                     while (prodList.length<=5){
+                     prodList.push(field1.productID);
+                             }
                   return i < 20; //stop loop after 5th item
              
              }
