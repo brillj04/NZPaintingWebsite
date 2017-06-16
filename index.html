@@ -15,33 +15,31 @@ $(document).ready(function(){
             $.each(result.products, function(i, field1){
            
              if (field1.Popularity == "High"){
-                     
                   popularProd  += '<li><div class="bannerImg"><img src="'+field1.imgPath+'" style="width:100px;height:100px;"/></div>';
-                  popularProd  += '<h1 class="title">'+field1.Title+'</h1>';
-                  popularProd  += '<h3 class="category">'+field1.Category+'</h3>';
+                  popularProd  += '<h1 class="title">'+field1.title+'</h1>';
+                  popularProd  += '<h3 class="category">'+field1.category+'</h3>';
                   popularProd  += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field1.price+'</p>';
-                  popularProd  += '<p class="desc" style="font-size:20px;">'+field1.Description+'</p>';
-                  popularProd  += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field1.Popularity+'</span>';
+                  popularProd  += '<p class="desc" style="font-size:20px;">'+field1.description+'</p>';
+                  popularProd  += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field1.popularity+'</span>';
                   popularProd  += '<br>';
-                  popularProd  += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field1.Onsale+'</span>';
+                  popularProd  += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field1.onsale+'</span>';
                   popularProd  += '</li>';
-                  return i < 20; //stop loop after 5th item
+                  return i < 4; //stop loop after 5th item
              
              }
            });
-            $.each(result.products, function(i, field2){
+            $.each(result.products, function(j, field2){
              if (field2.Onsale == "Yes"){
-
                   onsaleProd   += '<li><div class="bannerImg"><img src="'+field2.imgPath+'" style="width:100px;height:100px;"/></div>';
-                  onsaleProd   += '<h1 class="title">'+field2.Title+'</h1>';
-                  onsaleProd   += '<h3 class="category">'+field2.Category+'</h3>';
+                  onsaleProd   += '<h1 class="title">'+field2.title+'</h1>';
+                  onsaleProd   += '<h3 class="category">'+field2.category+'</h3>';
                   onsaleProd   += '<p class="price" style="font-size:24px;"><b>Price:</b> $'+field2.price+'</p>';
-                  onsaleProd   += '<p class="desc" style="font-size:20px;">'+field2.Description+'</p>';
-                  onsaleProd   += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field2.Popularity+'</span>';
+                  onsaleProd   += '<p class="desc" style="font-size:20px;">'+field2.description+'</p>';
+                  onsaleProd   += '<span class="popularity"style="font-size:18px;"><b>Popularity: </b>'+field2.popularity+'</span>';
                   onsaleProd   += '<br>';
-                  onsaleProd   += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field2.Onsale+'</span>';
+                  onsaleProd   += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field2.onsale+'</span>';
                   onsaleProd   += '</li>';
-                      return i < 20;//stop loop after 5th item
+                      return j < 4;//stop loop after 5th item
          
            }
                     
