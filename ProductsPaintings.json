@@ -1,5 +1,5 @@
 {
-	"book": [
+	"products": [
 	  {
 		"productID": 01,
 		"title": "Blue Fireworks",
@@ -7,7 +7,8 @@
 		"description": "Abstract painting of fireworks",
 		"popularity": "High",
 		"onsale": "No",
-		"price": 
+		"price": "200",
+		"imgPath": "Images/Products/Product1.jpg"
 	  },
 	  {
 		"productID": 02,
@@ -16,7 +17,8 @@
 		"description": "Beautiful pot of flowers",
 		"popularity": "Normal",
 		"onsale": "Yes",
-		"price": 
+		"price": "180",
+		"imgPath": "Images/Products/Product2.jpg"
 	  }
 	  {
 		"productID": 03,
@@ -25,7 +27,8 @@
 		"description": "A winter wonderland",
 		"popularity": "Normal",
 		"onsale": "Yes",
-		"price": 
+		"price": "240",
+		"imgPath": "Images/Products/Product3.jpg"
 	  }
 	   {
 		"productID": 04,
@@ -34,7 +37,8 @@
 		"description": "Tribal woman",
 		"popularity": "Normal",
 		"onsale": "No",
-		"price": 
+		"price": "430",
+		"imgPath": "Images/Products/Product4.jpg"
 	  }
 	   {
 		"productID": 05,
@@ -43,7 +47,8 @@
 		"description": "Lake view of Themistokles",
 		"popularity": "High",
 		"onsale": "No",
-		"price": 
+		"price": "1200",
+		"imgPath": "Images/Products/Product5.jpg"
 	  }
 	   {
 		"productID": 06,
@@ -52,7 +57,8 @@
 		"description": "Split green lime",
 		"popularity": "Normal",
 		"onsale": "No",
-		"price": 
+		"price": "89",
+		"imgPath": "Images/Products/Product6.jpg"
 	  }
 	   {
 		"productID": 07,
@@ -61,7 +67,8 @@
 		"description": "Nine neon skulls",
 		"popularity": "Normal",
 		"onsale": "Yes",
-		"price": 
+		"price": "140",
+		"imgPath": "Images/Products/Product7.jpg"
 	  }
 	  {
 		"productID": 08,
@@ -70,7 +77,8 @@
 		"description": "The Sculpture of Minerva",
 		"popularity": "High",
 		"onsale": "No",
-		"price": 
+		"price": "560",
+		"imgPath": "Images/Products/Product8.jpg"
 	  }
 	  {
 		"productID": 09,
@@ -79,7 +87,8 @@
 		"description": "A portrait of Doña Isabel de Porcel",
 		"popularity": "Normal",
 		"onsale": "Yes",
-		"price": 
+		"price": "198",
+		"imgPath": "Images/Products/Product9.jpg"
 	  }
 	  {
 		"productID": 10,
@@ -88,7 +97,8 @@
 		"description": "pink yellow life quote by Adrienne Rich",
 		"popularity": "Normal",
 		"onsale": "No",
-		"price": 
+		"price": "205",
+		"imgPath": "Images/Products/Product10.jpg"
 	  }
 	  {
 		"productID": 11,
@@ -97,7 +107,8 @@
 		"description": "Abstract painting of Edinburgh Castle",
 		"popularity": "High",
 		"onsale": "Yes",
-		"price": 
+		"price": "340",
+		"imgPath": "Images/Products/Product11.jpg"
 	  }
 	  {
 		"productID": 12,
@@ -106,7 +117,8 @@
 		"description": "The sculpture gallery",
 		"popularity": "High",
 		"onsale": "Yes",
-		"price": 
+		"price": "252",
+		"imgPath": "Images/Products/Product12.jpg"
 	  }
 	  {
 		"productID": 13,
@@ -115,7 +127,8 @@
 		"description": "Menacing Neo:More Than This.",
 		"popularity": "Normal",
 		"onsale": "Yes",
-		"price": 
+		"price": "209",
+		"imgPath": "Images/Products/Product13.jpg"
 	  }
 	  {
 		"productID": 14,
@@ -124,7 +137,8 @@
 		"description": "Fruits and champagne",
 		"popularity": "Normal",
 		"onsale": "No",
-		"price": 
+		"price": "2100",
+		"imgPath": "Images/Products/Product14.jpg"
 	  }
 	  {
 		"productID": 15,
@@ -133,7 +147,8 @@
 		"description": "Live Life",
 		"popularity": "High",
 		"onsale": "No",
-		"price": 
+		"price":  "100",
+		"imgPath": "Images/Products/Product15.jpg"
 	  }
 	  {
 		"productID": 16,
@@ -142,7 +157,8 @@
 		"description": "Cowboy holding a glass",
 		"popularity": "High",
 		"onsale": "Yes",
-		"price": 
+		"price":  "1594",
+		"imgPath": "Images/Products/Product16.jpg"
 	  }
 	  {
 		"productID": 17,
@@ -151,7 +167,8 @@
 		"description": "Creative tree and birds photo organizer",
 		"popularity": "Normal",
 		"onsale": "Yes",
-		"price": 
+		"price":  "134",
+		"imgPath": "Images/Products/Product17.jpg"
 	  }
 	  {
 		"productID": 18,
@@ -160,7 +177,8 @@
 		"description": "Split sunset on pine wood",
 		"popularity": "High",
 		"onsale": "No",
-		"price": 
+		"price":  "2051",
+		"imgPath": "Images/Products/Product18.jpg"
 	  }
 	  {
 		"productID": 19,
@@ -169,7 +187,8 @@
 		"description": "Top of mountain,hills and cliffs in a sunset",
 		"popularity": "High",
 		"onsale": "Yes",
-		"price": 
+		"price":  "2340",
+		"imgPath": "Images/Products/Product19.jpg"
 	  }
 	  {
 		"productID": 20,
@@ -178,7 +197,8 @@
 		"description": "A family celebrating Christmas together",
 		"popularity": "Normal",
 		"onsale": "No",
-		"price": 
+		"price":  "1970",
+		"imgPath": "Images/Products/Product20.jpg"
 	  }
 ]
 }  
