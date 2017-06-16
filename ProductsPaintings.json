@@ -19,7 +19,7 @@
 		"onsale": "Yes",
 		"price": "180",
 		"imgPath": "Images/Products/Product2.jpg"
-	  }
+	  },
 	  {
 		"productID": 03,
 		"title": "Holy Night",
@@ -29,7 +29,7 @@
 		"onsale": "Yes",
 		"price": "240",
 		"imgPath": "Images/Products/Product3.jpg"
-	  }
+	  },
 	   {
 		"productID": 04,
 		"title": "Door Gods",
@@ -39,7 +39,7 @@
 		"onsale": "No",
 		"price": "430",
 		"imgPath": "Images/Products/Product4.jpg"
-	  }
+	  },
 	   {
 		"productID": 05,
 		"title": "Lake View",
@@ -49,7 +49,7 @@
 		"onsale": "No",
 		"price": "1200",
 		"imgPath": "Images/Products/Product5.jpg"
-	  }
+	  },
 	   {
 		"productID": 06,
 		"title": "Green Lime",
@@ -59,7 +59,7 @@
 		"onsale": "No",
 		"price": "89",
 		"imgPath": "Images/Products/Product6.jpg"
-	  }
+	  },
 	   {
 		"productID": 07,
 		"title": "Colour of Thoughts",
@@ -69,7 +69,7 @@
 		"onsale": "Yes",
 		"price": "140",
 		"imgPath": "Images/Products/Product7.jpg"
-	  }
+	  },
 	  {
 		"productID": 08,
 		"title": "Goddess of Wisdom",
@@ -79,7 +79,7 @@
 		"onsale": "No",
 		"price": "560",
 		"imgPath": "Images/Products/Product8.jpg"
-	  }
+	  },
 	  {
 		"productID": 09,
 		"title": "Doña Isabel de Porcel",
@@ -89,7 +89,7 @@
 		"onsale": "Yes",
 		"price": "198",
 		"imgPath": "Images/Products/Product9.jpg"
-	  }
+	  },
 	  {
 		"productID": 10,
 		"title": "Remember Your Name",
@@ -99,7 +99,7 @@
 		"onsale": "No",
 		"price": "205",
 		"imgPath": "Images/Products/Product10.jpg"
-	  }
+	  },
 	  {
 		"productID": 11,
 		"title": "Edinburgh Castle",
@@ -109,7 +109,7 @@
 		"onsale": "Yes",
 		"price": "340",
 		"imgPath": "Images/Products/Product11.jpg"
-	  }
+	  },
 	  {
 		"productID": 12,
 		"title": "Sculpture Gallery",
@@ -119,7 +119,7 @@
 		"onsale": "Yes",
 		"price": "252",
 		"imgPath": "Images/Products/Product12.jpg"
-	  }
+	  },
 	  {
 		"productID": 13,
 		"title": "More Than This",
@@ -129,7 +129,7 @@
 		"onsale": "Yes",
 		"price": "209",
 		"imgPath": "Images/Products/Product13.jpg"
-	  }
+	  },
 	  {
 		"productID": 14,
 		"title": "Fruits and Champagne",
@@ -139,7 +139,7 @@
 		"onsale": "No",
 		"price": "2100",
 		"imgPath": "Images/Products/Product14.jpg"
-	  }
+	  },
 	  {
 		"productID": 15,
 		"title": "Live Life",
@@ -149,7 +149,7 @@
 		"onsale": "No",
 		"price":  "100",
 		"imgPath": "Images/Products/Product15.jpg"
-	  }
+	  },
 	  {
 		"productID": 16,
 		"title": "Portrait of Cowboy",
@@ -159,7 +159,7 @@
 		"onsale": "Yes",
 		"price":  "1594",
 		"imgPath": "Images/Products/Product16.jpg"
-	  }
+	  },
 	  {
 		"productID": 17,
 		"title": "Tree and Bird Wall Decoration",
@@ -169,7 +169,7 @@
 		"onsale": "Yes",
 		"price":  "134",
 		"imgPath": "Images/Products/Product17.jpg"
-	  }
+	  },
 	  {
 		"productID": 18,
 		"title": "Pine Wood Sunset",
@@ -179,7 +179,7 @@
 		"onsale": "No",
 		"price":  "2051",
 		"imgPath": "Images/Products/Product18.jpg"
-	  }
+	  },
 	  {
 		"productID": 19,
 		"title": "Sunset From the Top",
@@ -189,7 +189,7 @@
 		"onsale": "Yes",
 		"price":  "2340",
 		"imgPath": "Images/Products/Product19.jpg"
-	  }
+	  },
 	  {
 		"productID": 20,
 		"title": "Christmas of the Family",
