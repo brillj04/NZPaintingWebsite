@@ -2,7 +2,7 @@
 	"products": [
 	  {
 		"productID": "01",
-		"title": "Blue Fireworks",
+		"Title": "Blue Fireworks",
 		"category": "Abstract",
 		"Description": "Abstract painting of fireworks",
 		"popularity": "High",
@@ -12,7 +12,7 @@
 	  },
 	  {
 		"productID":"02",
-		"title": "Flowers",
+		"Title": "Flowers",
 		"category": "Still Life",
 		"Description": "Beautiful pot of flowers",
 		"popularity": "Normal",
@@ -22,7 +22,7 @@
 	  },
 	  {
 		"productID": "03",
-		"title": "Holy Night",
+		"Title": "Holy Night",
 		"category": "Christmas",
 		"Description": "A winter wonderland",
 		"popularity": "Normal",
@@ -32,7 +32,7 @@
 	  },
 	   {
 		"productID": "04",
-		"title": "Door Gods",
+		"Title": "Door Gods",
 		"category": "Sticker",
 		"Description": "Tribal woman",
 		"popularity": "Normal",
@@ -42,7 +42,7 @@
 	  },
 	   {
 		"productID": "05",
-		"title": "Lake View",
+		"Title": "Lake View",
 		"category": "Landscape",
 		"Description": "Lake view of Themistokles",
 		"popularity": "High",
@@ -52,7 +52,7 @@
 	  },
 	   {
 		"productID": "06",
-		"title": "Green Lime",
+		"Title": "Green Lime",
 		"category": "Split Canvas",
 		"Description": "Split green lime",
 		"popularity": "Normal",
