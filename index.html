@@ -14,7 +14,7 @@ $(document).ready(function(){
          var onsaleProd = '';
          var prodList = [];
             $.each(result.products, function(i, field1){
-           
+            while (prodList.length<=5){
              if (field1.popularity == "High"){
                   popularProd  += '<li><div class="bannerImg"><img src="'+field1.imgPath+'" style="width:100px;height:100px;"/></div>';
                   popularProd  += '<h1 class="title">'+field1.Title+'</h1>';
@@ -25,9 +25,9 @@ $(document).ready(function(){
                   popularProd  += '<br>';
                   popularProd  += '<span class="onsale"style="font-size:18px;"><b>OnSale Status: </b>'+field1.onsale+'</span>';
                   popularProd  += '</li>';
-                     while (prodList.length<=5){
+                    
                      prodList.push(field1.productID);
-                             }
+                          }
                   return i < 20; //stop loop after 5th item
              
              }
