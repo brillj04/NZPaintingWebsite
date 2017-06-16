@@ -1,7 +1,7 @@
 {
 	"products": [
 	  {
-		"productID": 01,
+		"productID": "01",
 		"title": "Blue Fireworks",
 		"category": "Abstract",
 		"Description": "Abstract painting of fireworks",
@@ -11,7 +11,7 @@
 		"imgPath": "Images/Products/Product1.jpg"
 	  },
 	  {
-		"productID": 02,
+		"productID":"02",
 		"title": "Flowers",
 		"category": "Still Life",
 		"Description": "Beautiful pot of flowers",
@@ -21,7 +21,7 @@
 		"imgPath": "Images/Products/Product2.jpg"
 	  },
 	  {
-		"productID": 03,
+		"productID": "03",
 		"title": "Holy Night",
 		"category": "Christmas",
 		"Description": "A winter wonderland",
@@ -31,7 +31,7 @@
 		"imgPath": "Images/Products/Product3.jpg"
 	  },
 	   {
-		"productID": 04,
+		"productID": "04",
 		"title": "Door Gods",
 		"category": "Sticker",
 		"Description": "Tribal woman",
@@ -41,7 +41,7 @@
 		"imgPath": "Images/Products/Product4.jpg"
 	  },
 	   {
-		"productID": 05,
+		"productID": "05",
 		"title": "Lake View",
 		"category": "Landscape",
 		"Description": "Lake view of Themistokles",
@@ -51,7 +51,7 @@
 		"imgPath": "Images/Products/Product5.jpg"
 	  },
 	   {
-		"productID": 06,
+		"productID": "06",
 		"title": "Green Lime",
 		"category": "Split Canvas",
 		"Description": "Split green lime",
@@ -61,7 +61,7 @@
 		"imgPath": "Images/Products/Product7.jpg"
 	  },
 	   {
-		"productID": 07,
+		"productID": "07",
 		"Title": "Colour of Thoughts",
 		"category": "Pop Art",
 		"Description": "Nine neon skulls",
@@ -71,7 +71,7 @@
 		"imgPath": "Images/Products/Product7.jpg"
 	  },
 	  {
-		"productID": 08,
+		"productID": "08",
 		"Title": "Goddess of Wisdom",
 		"category": "Sculpture",
 		"Description": "The Sculpture of Minerva",
@@ -81,7 +81,7 @@
 		"imgPath": "Images/Products/Product8.jpg"
 	  },
 	  {
-		"productID": 09,
+		"productID": "09",
 		"Title": "Doña Isabel de Porcel",
 		"category": "Portrait",
 		"Description": "A portrait of Doña Isabel de Porcel",
@@ -91,7 +91,7 @@
 		"imgPath": "Images/Products/Product9.jpg"
 	  },
 	  {
-		"productID": 10,
+		"productID": "10",
 		"Title": "Remember Your Name",
 		"category": "Quote And Text",
 		"Description": "pink yellow life quote by Adrienne Rich",
@@ -101,7 +101,7 @@
 		"imgPath": "Images/Products/Product10.jpg"
 	  },
 	  {
-		"productID": 11,
+		"productID": "11",
 		"Title": "Edinburgh Castle",
 		"category": "Abstract",
 		"Description": "Abstract painting of Edinburgh Castle",
@@ -111,7 +111,7 @@
 		"imgPath": "Images/Products/Product11.jpg"
 	  },
 	  {
-		"productID": 12,
+		"productID": "12",
 		"Title": "Sculpture Gallery",
 		"category": "Sculpture",
 		"Description": "The sculpture gallery",
@@ -121,7 +121,7 @@
 		"imgPath": "Images/Products/Product12.jpg"
 	  },
 	  {
-		"productID": 13,
+		"productID": "13",
 		"Title": "More Than This",
 		"category": "Pop Art",
 		"Description": "Menacing Neo:More Than This.",
@@ -131,7 +131,7 @@
 		"imgPath": "Images/Products/Product13.jpg"
 	  },
 	  {
-		"productID": 14,
+		"productID": "14",
 		"Title": "Fruits and Champagne",
 		"category": "Still Life",
 		"Description": "Fruits and champagne",
@@ -141,7 +141,7 @@
 		"imgPath": "Images/Products/Product14.jpg"
 	  },
 	  {
-		"productID": 15,
+		"productID": "15",
 		"Title": "Live Life",
 		"category": "Quote and Text",
 		"Description": "Live Life",
@@ -151,7 +151,7 @@
 		"imgPath": "Images/Products/Product15.jpg"
 	  },
 	  {
-		"productID": 16,
+		"productID": "16",
 		"Title": "Portrait of Cowboy",
 		"category": "Portrait",
 		"Description": "Cowboy holding a glass",
@@ -161,7 +161,7 @@
 		"imgPath": "Images/Products/Product16.jpg"
 	  },
 	  {
-		"productID": 17,
+		"productID": "17",
 		"Title": "Tree and Bird Wall Decoration",
 		"category": "Sticker",
 		"Description": "Creative tree and birds photo organizer",
@@ -171,7 +171,7 @@
 		"imgPath": "Images/Products/Product17.jpg"
 	  },
 	  {
-		"productID": 18,
+		"productID": "18",
 		"Title": "Pine Wood Sunset",
 		"category": "Split Canvas",
 		"Description": "Split sunset on pine wood",
@@ -181,7 +181,7 @@
 		"imgPath": "Images/Products/Product18.jpg"
 	  },
 	  {
-		"productID": 19,
+		"productID": "19",
 		"Title": "Sunset From the Top",
 		"category": "Landscape",
 		"Description": "Top of mountain,hills and cliffs in a sunset",
@@ -191,7 +191,7 @@
 		"imgPath": "Images/Products/Product19.jpg"
 	  },
 	  {
-		"productID": 20,
+		"productID": "20",
 		"Title": "Christmas of the Family",
 		"category": "Christmas",
 		"Description": "A family celebrating Christmas together",
